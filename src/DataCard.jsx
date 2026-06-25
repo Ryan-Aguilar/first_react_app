@@ -13,7 +13,7 @@ export default function DataCard({ title, description, imageURL }) {
       <CardContent sx={{ pt: 0 }}>
         <Typography>{title}</Typography>
         
-        {description.map((desc) => <Typography>{desc}</Typography>)}
+        {description.map((desc) => <Typography key={desc}>{desc}</Typography>)}
         
       </CardContent>
     </Card>
